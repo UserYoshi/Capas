@@ -26,10 +26,10 @@ namespace CapaDatos
                 conexion.Open();
                 Console.WriteLine("Conexión exitosa");
 
-                //SqlCommand comando = new SqlCommand("listar_cliente" , conexion);//
+                SqlCommand comando = new SqlCommand("listar_cliente", conexion);
 
-                SqlCommand comando = new SqlCommand();
                 comando.CommandType = CommandType.StoredProcedure;
+                
                 
 
 
@@ -51,6 +51,7 @@ namespace CapaDatos
             }
         }
 
+        //metodo para buscar
 
         public DataTable Buscar(string valor) 
         {
